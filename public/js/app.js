@@ -1,3 +1,8 @@
+const weatherForm = document.querySelector("form");
+const input = document.querySelector("input");
+const msgOne = document.querySelector("#message-1");
+const msgTwo = document.querySelector("#message-2");
+
 async function getData(address, btn1, btn2) {
   btn1.textContent = "Loading...";
   btn2.textContent = "";
@@ -12,11 +17,6 @@ async function getData(address, btn1, btn2) {
   btn1.textContent = data.location;
   btn2.textContent = data.forecast;
 }
-
-const weatherForm = document.querySelector("form");
-const input = document.querySelector("input");
-const msgOne = document.querySelector("#message-1");
-const msgTwo = document.querySelector("#message-2");
 
 weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();

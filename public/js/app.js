@@ -1,5 +1,3 @@
-console.log("Clinet side js is loaded");
-
 async function getData(address, btn1, btn2) {
   btn1.textContent = "Loading...";
   btn2.textContent = "";
